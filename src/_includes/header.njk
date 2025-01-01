@@ -1,13 +1,13 @@
 <header class="bg-white shadow-sm">
     <div class="container py-4">
         <nav class="flex items-center justify-between">
-            <a href="/{{ locale }}" class="text-2xl font-display font-bold text-primary">{% i18n "site.title", locale %}</a>
+            <a href="/{{ locale }}" class="text-2xl font-display font-bold text-primary">Snake Plants</a>
             
             <ul class="hidden md:flex space-x-8">
-                <li><a href="/{{ locale }}" class="hover:text-primary">{% i18n "nav.home", locale %}</a></li>
-                <li><a href="/{{ locale }}/about" class="hover:text-primary">{% i18n "nav.about", locale %}</a></li>
-                <li><a href="/{{ locale }}/services" class="hover:text-primary">{% i18n "nav.services", locale %}</a></li>
-                <li><a href="/{{ locale }}/contact" class="hover:text-primary">{% i18n "nav.contact", locale %}</a></li>
+                <li><a href="/{{ locale }}" class="hover:text-primary">{{ locale === 'en' ? 'Home' : 'Inicio' }}</a></li>
+                <li><a href="/{{ locale }}/about" class="hover:text-primary">{{ locale === 'en' ? 'About' : 'Nosotros' }}</a></li>
+                <li><a href="/{{ locale }}/services" class="hover:text-primary">{{ locale === 'en' ? 'Services' : 'Servicios' }}</a></li>
+                <li><a href="/{{ locale }}/contact" class="hover:text-primary">{{ locale === 'en' ? 'Contact' : 'Contacto' }}</a></li>
                 <li class="relative group">
                     <button class="flex items-center hover:text-primary">
                         {{ locale | upper }}
