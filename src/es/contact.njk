@@ -1,0 +1,101 @@
+---
+layout: base.njk
+title: Contáctanos
+locale: es
+---
+
+<section class="bg-gradient-to-r from-primary/10 to-primary/5 py-20">
+    <div class="container">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl font-bold mb-6">Contáctanos</h1>
+            <p class="text-xl text-gray-600">Ponte en contacto con nuestros expertos en cuidado de plantas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Ponte en Contacto</h2>
+                <p class="text-gray-600 mb-8">Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                
+                <form class="space-y-6" id="contactForm">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700">Servicio de Interés</label>
+                        <select id="service" name="service" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="consultation">Consulta de Plantas</option>
+                            <option value="maintenance">Mantenimiento de Plantas</option>
+                            <option value="design">Diseño Interior con Plantas</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+            
+            <div>
+                <div class="bg-gray-100 p-8 rounded-lg mb-8">
+                    <h3 class="text-xl font-bold mb-4">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold">Dirección</h4>
+                            <p class="text-gray-600">Calle Planta 123<br>Ciudad Verde, CV 12345</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Teléfono</h4>
+                            <p class="text-gray-600">(555) 123-4567</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Correo Electrónico</h4>
+                            <p class="text-gray-600">hola@snakeplants.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Horario de Atención</h3>
+                    <div class="space-y-2">
+                        <p class="flex justify-between">
+                            <span class="text-gray-600">Lunes - Viernes</span>
+                            <span class="font-medium">9:00 - 18:00</span>
+                        </p>
+                        <p class="flex justify-between">
+                            <span class="text-gray-600">Sábado</span>
+                            <span class="font-medium">10:00 - 16:00</span>
+                        </p>
+                        <p class="flex justify-between">
+                            <span class="text-gray-600">Domingo</span>
+                            <span class="font-medium">Cerrado</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Add form submission logic here
+    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+    this.reset();
+});
+</script>

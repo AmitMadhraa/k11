@@ -1,13 +1,25 @@
 <header class="bg-white shadow-sm">
     <div class="container py-4">
         <nav class="flex items-center justify-between">
-            <a href="/" class="text-2xl font-display font-bold text-primary">Snake Plants</a>
+            <a href="/{{ locale }}" class="text-2xl font-display font-bold text-primary">{% i18n "site.title", locale %}</a>
             
             <ul class="hidden md:flex space-x-8">
-                <li><a href="/" class="hover:text-primary">Home</a></li>
-                <li><a href="/about" class="hover:text-primary">About</a></li>
-                <li><a href="/services" class="hover:text-primary">Services</a></li>
-                <li><a href="/contact" class="hover:text-primary">Contact</a></li>
+                <li><a href="/{{ locale }}" class="hover:text-primary">{% i18n "nav.home", locale %}</a></li>
+                <li><a href="/{{ locale }}/about" class="hover:text-primary">{% i18n "nav.about", locale %}</a></li>
+                <li><a href="/{{ locale }}/services" class="hover:text-primary">{% i18n "nav.services", locale %}</a></li>
+                <li><a href="/{{ locale }}/contact" class="hover:text-primary">{% i18n "nav.contact", locale %}</a></li>
+                <li class="relative group">
+                    <button class="flex items-center hover:text-primary">
+                        {{ locale | upper }}
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-24">
+                        <li><a href="/en{{ page.url.slice(3) }}" class="block px-4 py-2 hover:bg-gray-100">English</a></li>
+                        <li><a href="/es{{ page.url.slice(3) }}" class="block px-4 py-2 hover:bg-gray-100">Español</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <button class="md:hidden">

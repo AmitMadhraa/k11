@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: Inicio
+locale: es
+---
+
+<section class="bg-gradient-to-r from-primary/10 to-primary/5 py-20">
+    <div class="container">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl font-bold mb-6">{% i18n "hero.title", locale %}</h1>
+            <p class="text-xl text-gray-600 mb-8">{% i18n "hero.subtitle", locale %}</p>
+            <a href="/{{ locale }}/contact" class="btn btn-primary">{% i18n "hero.cta", locale %}</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12">{% i18n "services.title", locale %}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">{% i18n "services.consultation.title", locale %}</h3>
+                <p class="text-gray-600 mb-4">{% i18n "services.consultation.description", locale %}</p>
+                <a href="/{{ locale }}/services#consultation" class="text-primary hover:underline">Saber más →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">{% i18n "services.maintenance.title", locale %}</h3>
+                <p class="text-gray-600 mb-4">{% i18n "services.maintenance.description", locale %}</p>
+                <a href="/{{ locale }}/services#maintenance" class="text-primary hover:underline">Saber más →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">{% i18n "services.design.title", locale %}</h3>
+                <p class="text-gray-600 mb-4">{% i18n "services.design.description", locale %}</p>
+                <a href="/{{ locale }}/services#design" class="text-primary hover:underline">Saber más →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-50 py-16">
+    <div class="container">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">¿Por qué elegir Snake Plants?</h2>
+            <p class="text-xl text-gray-600 mb-8">Con años de experiencia y pasión por las plantas, proporcionamos el cuidado de la más alta calidad para tu jardín interior.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Conocimiento Experto</h3>
+                    <p class="text-gray-600">Nuestro equipo tiene un amplio conocimiento en el cuidado y mantenimiento de plantas.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Cuidado Personalizado</h3>
+                    <p class="text-gray-600">Desarrollamos planes de cuidado adaptados a tus necesidades específicas y entorno.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="container">
+        <div class="bg-primary text-white rounded-lg p-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">¿Listo para Empezar?</h2>
+            <p class="text-xl mb-8">Contáctanos hoy para una consulta y permite que ayudemos a tus plantas a prosperar.</p>
+            <a href="/{{ locale }}/contact" class="btn bg-white text-primary hover:bg-gray-100">Contáctanos</a>
+        </div>
+    </div>
+</section>

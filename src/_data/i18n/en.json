@@ -1,0 +1,37 @@
+{
+    "site": {
+        "title": "Snake Plants",
+        "description": "Expert plant care and maintenance services for your indoor jungle"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Expert Plant Care for Your Indoor Jungle",
+        "subtitle": "Professional plant care services to help your snake plants thrive. We bring life to your space with our expert maintenance and design services.",
+        "cta": "Get Started"
+    },
+    "services": {
+        "title": "Our Services",
+        "consultation": {
+            "title": "Plant Consultation",
+            "description": "Expert advice on plant selection, placement, and care routines tailored to your space."
+        },
+        "maintenance": {
+            "title": "Plant Maintenance",
+            "description": "Regular care services including watering, pruning, and pest management for healthy plants."
+        },
+        "design": {
+            "title": "Interior Plant Design",
+            "description": "Creative plant arrangements and designs to enhance your indoor spaces."
+        }
+    },
+    "footer": {
+        "quickLinks": "Quick Links",
+        "contact": "Contact Us",
+        "rights": "All rights reserved"
+    }
+}

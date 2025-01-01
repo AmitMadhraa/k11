@@ -1,0 +1,37 @@
+{
+    "site": {
+        "title": "Snake Plants",
+        "description": "Servicios expertos de cuidado y mantenimiento de plantas para tu jardín interior"
+    },
+    "nav": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Cuidado Experto para tu Jardín Interior",
+        "subtitle": "Servicios profesionales de cuidado de plantas para ayudar a tus plantas serpiente a prosperar. Damos vida a tu espacio con nuestros servicios expertos de mantenimiento y diseño.",
+        "cta": "Empezar"
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "consultation": {
+            "title": "Consulta de Plantas",
+            "description": "Asesoramiento experto sobre selección, ubicación y rutinas de cuidado adaptadas a tu espacio."
+        },
+        "maintenance": {
+            "title": "Mantenimiento de Plantas",
+            "description": "Servicios regulares de cuidado que incluyen riego, poda y control de plagas para plantas saludables."
+        },
+        "design": {
+            "title": "Diseño Interior con Plantas",
+            "description": "Arreglos creativos y diseños con plantas para mejorar tus espacios interiores."
+        }
+    },
+    "footer": {
+        "quickLinks": "Enlaces Rápidos",
+        "contact": "Contáctanos",
+        "rights": "Todos los derechos reservados"
+    }
+}
